@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074DBD902018B63600CFFC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBD8F2018B63600CFFC89 /* AppDelegate.swift */; };
+		074DBD922018B63600CFFC89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBD912018B63600CFFC89 /* ViewController.swift */; };
+		074DBD952018B63600CFFC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074DBD932018B63600CFFC89 /* Main.storyboard */; };
+		074DBD972018B63600CFFC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074DBD962018B63600CFFC89 /* Assets.xcassets */; };
+		074DBD9A2018B63600CFFC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074DBD982018B63600CFFC89 /* LaunchScreen.storyboard */; };
+		074DBDA82018B8B000CFFC89 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBDA72018B8B000CFFC89 /* NotificationService.swift */; };
+		074DBDAC2018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 074DBDA52018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		074DBDB82018B9EC00CFFC89 /* MusicMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBDB62018B9EC00CFFC89 /* MusicMethods.swift */; };
+		074DBDB92018B9EC00CFFC89 /* MusicConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBDB72018B9EC00CFFC89 /* MusicConstants.swift */; };
+		074DBDBB2018B9F800CFFC89 /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBDBA2018B9F800CFFC89 /* SongItem.swift */; };
+		074DBDD32018BA2200CFFC89 /* attention.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDBF2018BA2000CFFC89 /* attention.wav */; };
+		074DBDD42018BA2200CFFC89 /* letmeloveyou.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC02018BA2100CFFC89 /* letmeloveyou.wav */; };
+		074DBDD52018BA2200CFFC89 /* closer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC12018BA2100CFFC89 /* closer.wav */; };
+		074DBDD62018BA2200CFFC89 /* reaggae.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC22018BA2100CFFC89 /* reaggae.wav */; };
+		074DBDD72018BA2200CFFC89 /* eyou.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC32018BA2100CFFC89 /* eyou.wav */; };
+		074DBDD82018BA2200CFFC89 /* mip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC42018BA2100CFFC89 /* mip.wav */; };
+		074DBDD92018BA2200CFFC89 /* bankaccount.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC52018BA2100CFFC89 /* bankaccount.wav */; };
+		074DBDDA2018BA2200CFFC89 /* unforgettable.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC62018BA2100CFFC89 /* unforgettable.wav */; };
+		074DBDDB2018BA2200CFFC89 /* despacito.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC72018BA2100CFFC89 /* despacito.wav */; };
+		074DBDDC2018BA2200CFFC89 /* ispy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC82018BA2100CFFC89 /* ispy.wav */; };
+		074DBDDD2018BA2200CFFC89 /* feels.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDC92018BA2100CFFC89 /* feels.wav */; };
+		074DBDDE2018BA2200CFFC89 /* panda.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCA2018BA2100CFFC89 /* panda.wav */; };
+		074DBDDF2018BA2200CFFC89 /* cheapthrill.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCB2018BA2200CFFC89 /* cheapthrill.wav */; };
+		074DBDE02018BA2200CFFC89 /* rockstar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCC2018BA2200CFFC89 /* rockstar.wav */; };
+		074DBDE12018BA2200CFFC89 /* shapeofyou.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCD2018BA2200CFFC89 /* shapeofyou.wav */; };
+		074DBDE22018BA2200CFFC89 /* alone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCE2018BA2200CFFC89 /* alone.wav */; };
+		074DBDE32018BA2200CFFC89 /* starboy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDCF2018BA2200CFFC89 /* starboy.wav */; };
+		074DBDE42018BA2200CFFC89 /* bodak.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDD02018BA2200CFFC89 /* bodak.wav */; };
+		074DBDE52018BA2200CFFC89 /* migentre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDD12018BA2200CFFC89 /* migentre.wav */; };
+		074DBDE62018BA2200CFFC89 /* wedont.wav in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDD22018BA2200CFFC89 /* wedont.wav */; };
+		074DBDFB2018BA3500CFFC89 /* despacitotagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDE72018BA3300CFFC89 /* despacitotagged.mp3 */; };
+		074DBDFC2018BA3500CFFC89 /* shapeofyoutagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDE82018BA3300CFFC89 /* shapeofyoutagged.mp3 */; };
+		074DBDFD2018BA3500CFFC89 /* ispytaggged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDE92018BA3300CFFC89 /* ispytaggged.mp3 */; };
+		074DBDFE2018BA3500CFFC89 /* bodakapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDEA2018BA3300CFFC89 /* bodakapp.mp3 */; };
+		074DBDFF2018BA3500CFFC89 /* reaggaetagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDEB2018BA3300CFFC89 /* reaggaetagged.mp3 */; };
+		074DBE002018BA3500CFFC89 /* cheapthrillstagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDEC2018BA3300CFFC89 /* cheapthrillstagged.mp3 */; };
+		074DBE012018BA3500CFFC89 /* pandatagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDED2018BA3400CFFC89 /* pandatagged.mp3 */; };
+		074DBE022018BA3500CFFC89 /* rockstartagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDEE2018BA3400CFFC89 /* rockstartagged.mp3 */; };
+		074DBE032018BA3500CFFC89 /* alonetagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDEF2018BA3400CFFC89 /* alonetagged.mp3 */; };
+		074DBE042018BA3500CFFC89 /* unforgettableapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF02018BA3400CFFC89 /* unforgettableapp.mp3 */; };
+		074DBE052018BA3500CFFC89 /* attentionapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF12018BA3400CFFC89 /* attentionapp.mp3 */; };
+		074DBE062018BA3500CFFC89 /* feelsapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF22018BA3400CFFC89 /* feelsapp.mp3 */; };
+		074DBE072018BA3500CFFC89 /* letmeloveyoutagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF32018BA3400CFFC89 /* letmeloveyoutagged.mp3 */; };
+		074DBE082018BA3500CFFC89 /* migentreapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF42018BA3400CFFC89 /* migentreapp.mp3 */; };
+		074DBE092018BA3500CFFC89 /* starboytagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF52018BA3400CFFC89 /* starboytagged.mp3 */; };
+		074DBE0A2018BA3500CFFC89 /* wedonttalkanymoretagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF62018BA3500CFFC89 /* wedonttalkanymoretagged.mp3 */; };
+		074DBE0B2018BA3500CFFC89 /* bankapp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF72018BA3500CFFC89 /* bankapp.mp3 */; };
+		074DBE0C2018BA3500CFFC89 /* closertagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF82018BA3500CFFC89 /* closertagged.mp3 */; };
+		074DBE0D2018BA3500CFFC89 /* eyou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDF92018BA3500CFFC89 /* eyou.mp3 */; };
+		074DBE0E2018BA3500CFFC89 /* marimbasinparistagged.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 074DBDFA2018BA3500CFFC89 /* marimbasinparistagged.mp3 */; };
+		074DBE122018BA4C00CFFC89 /* SongCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE102018BA4C00CFFC89 /* SongCellHeader.swift */; };
+		074DBE132018BA4C00CFFC89 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE112018BA4C00CFFC89 /* SongCell.swift */; };
+		074DBE272018BA8600CFFC89 /* JLYoutubeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE192018BA8400CFFC89 /* JLYoutubeActivity.m */; };
+		074DBE292018BA8600CFFC89 /* JLYoutubeActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 074DBE1B2018BA8500CFFC89 /* JLYoutubeActivity.bundle */; };
+		074DBE322018BABF00CFFC89 /* ToplessTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE302018BABE00CFFC89 /* ToplessTextfield.swift */; };
+		074DBE332018BABF00CFFC89 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE312018BABE00CFFC89 /* AudioPlayer.swift */; };
+		074DBE3B2018BAD300CFFC89 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE352018BAD200CFFC89 /* Extenstions.swift */; };
+		074DBE3C2018BAD300CFFC89 /* StyleGuideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE362018BAD200CFFC89 /* StyleGuideManager.swift */; };
+		074DBE3D2018BAD300CFFC89 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE372018BAD200CFFC89 /* AssetManager.swift */; };
+		074DBE3E2018BAD300CFFC89 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE382018BAD200CFFC89 /* Methods.swift */; };
+		074DBE3F2018BAD300CFFC89 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE392018BAD200CFFC89 /* AlertMessage.swift */; };
+		074DBE402018BAD300CFFC89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE3A2018BAD200CFFC89 /* Constants.swift */; };
+		074DBE462018BB0500CFFC89 /* SongPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE422018BB0500CFFC89 /* SongPlayController.swift */; };
+		074DBE472018BB0500CFFC89 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE432018BB0500CFFC89 /* InfoController.swift */; };
+		074DBE482018BB0500CFFC89 /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE442018BB0500CFFC89 /* TutorialController.swift */; };
+		074DBE492018BB0500CFFC89 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE452018BB0500CFFC89 /* HomeController.swift */; };
+		074DBE4D2018BB1200CFFC89 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE4B2018BB1200CFFC89 /* LoginController.swift */; };
+		074DBE4E2018BB1200CFFC89 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074DBE4C2018BB1200CFFC89 /* SignupController.swift */; };
+		975BC1475F6574DE3DB20A2B /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64CF623FF81761C145DEA681 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		AA3645F8CFE02C292B6A71C5 /* Pods_Ringtones.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21383A8E61F48C283C6882F /* Pods_Ringtones.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074DBDAA2018B8B000CFFC89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074DBD842018B63600CFFC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074DBDA42018B8B000CFFC89;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		074DBDB02018B8B000CFFC89 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				074DBDAC2018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		074DBD8C2018B63600CFFC89 /* Ringtones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringtones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074DBD8F2018B63600CFFC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074DBD912018B63600CFFC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074DBD942018B63600CFFC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074DBD962018B63600CFFC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074DBD992018B63600CFFC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		074DBD9B2018B63600CFFC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074DBDA52018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		074DBDA72018B8B000CFFC89 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		074DBDA92018B8B000CFFC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074DBDB62018B9EC00CFFC89 /* MusicMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMethods.swift; sourceTree = "<group>"; };
+		074DBDB72018B9EC00CFFC89 /* MusicConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicConstants.swift; sourceTree = "<group>"; };
+		074DBDBA2018B9F800CFFC89 /* SongItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
+		074DBDBF2018BA2000CFFC89 /* attention.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = attention.wav; sourceTree = "<group>"; };
+		074DBDC02018BA2100CFFC89 /* letmeloveyou.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = letmeloveyou.wav; sourceTree = "<group>"; };
+		074DBDC12018BA2100CFFC89 /* closer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closer.wav; sourceTree = "<group>"; };
+		074DBDC22018BA2100CFFC89 /* reaggae.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reaggae.wav; sourceTree = "<group>"; };
+		074DBDC32018BA2100CFFC89 /* eyou.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = eyou.wav; sourceTree = "<group>"; };
+		074DBDC42018BA2100CFFC89 /* mip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mip.wav; sourceTree = "<group>"; };
+		074DBDC52018BA2100CFFC89 /* bankaccount.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bankaccount.wav; sourceTree = "<group>"; };
+		074DBDC62018BA2100CFFC89 /* unforgettable.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = unforgettable.wav; sourceTree = "<group>"; };
+		074DBDC72018BA2100CFFC89 /* despacito.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = despacito.wav; sourceTree = "<group>"; };
+		074DBDC82018BA2100CFFC89 /* ispy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ispy.wav; sourceTree = "<group>"; };
+		074DBDC92018BA2100CFFC89 /* feels.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = feels.wav; sourceTree = "<group>"; };
+		074DBDCA2018BA2100CFFC89 /* panda.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = panda.wav; sourceTree = "<group>"; };
+		074DBDCB2018BA2200CFFC89 /* cheapthrill.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheapthrill.wav; sourceTree = "<group>"; };
+		074DBDCC2018BA2200CFFC89 /* rockstar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rockstar.wav; sourceTree = "<group>"; };
+		074DBDCD2018BA2200CFFC89 /* shapeofyou.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shapeofyou.wav; sourceTree = "<group>"; };
+		074DBDCE2018BA2200CFFC89 /* alone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alone.wav; sourceTree = "<group>"; };
+		074DBDCF2018BA2200CFFC89 /* starboy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = starboy.wav; sourceTree = "<group>"; };
+		074DBDD02018BA2200CFFC89 /* bodak.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bodak.wav; sourceTree = "<group>"; };
+		074DBDD12018BA2200CFFC89 /* migentre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = migentre.wav; sourceTree = "<group>"; };
+		074DBDD22018BA2200CFFC89 /* wedont.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wedont.wav; sourceTree = "<group>"; };
+		074DBDE72018BA3300CFFC89 /* despacitotagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = despacitotagged.mp3; sourceTree = "<group>"; };
+		074DBDE82018BA3300CFFC89 /* shapeofyoutagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shapeofyoutagged.mp3; sourceTree = "<group>"; };
+		074DBDE92018BA3300CFFC89 /* ispytaggged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ispytaggged.mp3; sourceTree = "<group>"; };
+		074DBDEA2018BA3300CFFC89 /* bodakapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bodakapp.mp3; sourceTree = "<group>"; };
+		074DBDEB2018BA3300CFFC89 /* reaggaetagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reaggaetagged.mp3; sourceTree = "<group>"; };
+		074DBDEC2018BA3300CFFC89 /* cheapthrillstagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheapthrillstagged.mp3; sourceTree = "<group>"; };
+		074DBDED2018BA3400CFFC89 /* pandatagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pandatagged.mp3; sourceTree = "<group>"; };
+		074DBDEE2018BA3400CFFC89 /* rockstartagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rockstartagged.mp3; sourceTree = "<group>"; };
+		074DBDEF2018BA3400CFFC89 /* alonetagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alonetagged.mp3; sourceTree = "<group>"; };
+		074DBDF02018BA3400CFFC89 /* unforgettableapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unforgettableapp.mp3; sourceTree = "<group>"; };
+		074DBDF12018BA3400CFFC89 /* attentionapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = attentionapp.mp3; sourceTree = "<group>"; };
+		074DBDF22018BA3400CFFC89 /* feelsapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feelsapp.mp3; sourceTree = "<group>"; };
+		074DBDF32018BA3400CFFC89 /* letmeloveyoutagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = letmeloveyoutagged.mp3; sourceTree = "<group>"; };
+		074DBDF42018BA3400CFFC89 /* migentreapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = migentreapp.mp3; sourceTree = "<group>"; };
+		074DBDF52018BA3400CFFC89 /* starboytagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starboytagged.mp3; sourceTree = "<group>"; };
+		074DBDF62018BA3500CFFC89 /* wedonttalkanymoretagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wedonttalkanymoretagged.mp3; sourceTree = "<group>"; };
+		074DBDF72018BA3500CFFC89 /* bankapp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bankapp.mp3; sourceTree = "<group>"; };
+		074DBDF82018BA3500CFFC89 /* closertagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = closertagged.mp3; sourceTree = "<group>"; };
+		074DBDF92018BA3500CFFC89 /* eyou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eyou.mp3; sourceTree = "<group>"; };
+		074DBDFA2018BA3500CFFC89 /* marimbasinparistagged.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marimbasinparistagged.mp3; sourceTree = "<group>"; };
+		074DBE102018BA4C00CFFC89 /* SongCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCellHeader.swift; sourceTree = "<group>"; };
+		074DBE112018BA4C00CFFC89 /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		074DBE152018BA8300CFFC89 /* Ringtones-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ringtones-Bridging-Header.h"; sourceTree = "<group>"; };
+		074DBE192018BA8400CFFC89 /* JLYoutubeActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLYoutubeActivity.m; sourceTree = "<group>"; };
+		074DBE1B2018BA8500CFFC89 /* JLYoutubeActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JLYoutubeActivity.bundle; sourceTree = "<group>"; };
+		074DBE1D2018BA8500CFFC89 /* JLYoutubeActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLYoutubeActivity.h; sourceTree = "<group>"; };
+		074DBE302018BABE00CFFC89 /* ToplessTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToplessTextfield.swift; sourceTree = "<group>"; };
+		074DBE312018BABE00CFFC89 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		074DBE352018BAD200CFFC89 /* Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		074DBE362018BAD200CFFC89 /* StyleGuideManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuideManager.swift; sourceTree = "<group>"; };
+		074DBE372018BAD200CFFC89 /* AssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
+		074DBE382018BAD200CFFC89 /* Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+		074DBE392018BAD200CFFC89 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		074DBE3A2018BAD200CFFC89 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		074DBE422018BB0500CFFC89 /* SongPlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongPlayController.swift; sourceTree = "<group>"; };
+		074DBE432018BB0500CFFC89 /* InfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		074DBE442018BB0500CFFC89 /* TutorialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		074DBE452018BB0500CFFC89 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		074DBE4B2018BB1200CFFC89 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		074DBE4C2018BB1200CFFC89 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		4EEA1E5AD638086E49464842 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		64CF623FF81761C145DEA681 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7E26F009009FA60DCE2424 /* Pods-Ringtones.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ringtones.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ringtones/Pods-Ringtones.release.xcconfig"; sourceTree = "<group>"; };
+		B21383A8E61F48C283C6882F /* Pods_Ringtones.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ringtones.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ED85F0A667E38040E3F0E5 /* Pods-Ringtones.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ringtones.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ringtones/Pods-Ringtones.debug.xcconfig"; sourceTree = "<group>"; };
+		E1626E34C5CD75CC3E4A9FA3 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074DBD892018B63600CFFC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3645F8CFE02C292B6A71C5 /* Pods_Ringtones.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074DBDA22018B8B000CFFC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975BC1475F6574DE3DB20A2B /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074DBD832018B63600CFFC89 = {
+			isa = PBXGroup;
+			children = (
+				074DBD8E2018B63600CFFC89 /* Ringtones */,
+				074DBDA62018B8B000CFFC89 /* OneSignalNotificationServiceExtension */,
+				074DBD8D2018B63600CFFC89 /* Products */,
+				1DEBC106AF664FF41CF91993 /* Pods */,
+				FEEFD6BECB8B9EAB244065B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		074DBD8D2018B63600CFFC89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074DBD8C2018B63600CFFC89 /* Ringtones.app */,
+				074DBDA52018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074DBD8E2018B63600CFFC89 /* Ringtones */ = {
+			isa = PBXGroup;
+			children = (
+				074DBDBC2018B9FE00CFFC89 /* Resources */,
+				074DBDB42018B99600CFFC89 /* Models */,
+				074DBDB32018B98F00CFFC89 /* Views */,
+				074DBDB22018B98500CFFC89 /* Controllers */,
+				074DBDB12018B97E00CFFC89 /* Helpers */,
+				074DBD8F2018B63600CFFC89 /* AppDelegate.swift */,
+				074DBD912018B63600CFFC89 /* ViewController.swift */,
+				074DBD932018B63600CFFC89 /* Main.storyboard */,
+				074DBD962018B63600CFFC89 /* Assets.xcassets */,
+				074DBD982018B63600CFFC89 /* LaunchScreen.storyboard */,
+				074DBD9B2018B63600CFFC89 /* Info.plist */,
+			);
+			path = Ringtones;
+			sourceTree = "<group>";
+		};
+		074DBDA62018B8B000CFFC89 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				074DBDA72018B8B000CFFC89 /* NotificationService.swift */,
+				074DBDA92018B8B000CFFC89 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		074DBDB12018B97E00CFFC89 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE342018BAC500CFFC89 /* Constants */,
+				074DBDB52018B9DD00CFFC89 /* Global */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		074DBDB22018B98500CFFC89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE4A2018BB0800CFFC89 /* Auth */,
+				074DBE412018BAFA00CFFC89 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		074DBDB32018B98F00CFFC89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE312018BABE00CFFC89 /* AudioPlayer.swift */,
+				074DBE302018BABE00CFFC89 /* ToplessTextfield.swift */,
+				074DBE142018BA5300CFFC89 /* JLActivity */,
+				074DBE0F2018BA4000CFFC89 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		074DBDB42018B99600CFFC89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				074DBDBA2018B9F800CFFC89 /* SongItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		074DBDB52018B9DD00CFFC89 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE382018BAD200CFFC89 /* Methods.swift */,
+				074DBDB72018B9EC00CFFC89 /* MusicConstants.swift */,
+				074DBDB62018B9EC00CFFC89 /* MusicMethods.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		074DBDBC2018B9FE00CFFC89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				074DBDBE2018BA0D00CFFC89 /* mp3 */,
+				074DBDBD2018BA0700CFFC89 /* wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		074DBDBD2018BA0700CFFC89 /* wav */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+		074DBDBE2018BA0D00CFFC89 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				074DBDEF2018BA3400CFFC89 /* alonetagged.mp3 */,
+				074DBDF12018BA3400CFFC89 /* attentionapp.mp3 */,
+				074DBDF72018BA3500CFFC89 /* bankapp.mp3 */,
+				074DBDEA2018BA3300CFFC89 /* bodakapp.mp3 */,
+				074DBDEC2018BA3300CFFC89 /* cheapthrillstagged.mp3 */,
+				074DBDF82018BA3500CFFC89 /* closertagged.mp3 */,
+				074DBDE72018BA3300CFFC89 /* despacitotagged.mp3 */,
+				074DBDF92018BA3500CFFC89 /* eyou.mp3 */,
+				074DBDF22018BA3400CFFC89 /* feelsapp.mp3 */,
+				074DBDE92018BA3300CFFC89 /* ispytaggged.mp3 */,
+				074DBDF32018BA3400CFFC89 /* letmeloveyoutagged.mp3 */,
+				074DBDFA2018BA3500CFFC89 /* marimbasinparistagged.mp3 */,
+				074DBDF42018BA3400CFFC89 /* migentreapp.mp3 */,
+				074DBDED2018BA3400CFFC89 /* pandatagged.mp3 */,
+				074DBDEB2018BA3300CFFC89 /* reaggaetagged.mp3 */,
+				074DBDEE2018BA3400CFFC89 /* rockstartagged.mp3 */,
+				074DBDE82018BA3300CFFC89 /* shapeofyoutagged.mp3 */,
+				074DBDF52018BA3400CFFC89 /* starboytagged.mp3 */,
+				074DBDF02018BA3400CFFC89 /* unforgettableapp.mp3 */,
+				074DBDF62018BA3500CFFC89 /* wedonttalkanymoretagged.mp3 */,
+				074DBDCE2018BA2200CFFC89 /* alone.wav */,
+				074DBDBF2018BA2000CFFC89 /* attention.wav */,
+				074DBDC52018BA2100CFFC89 /* bankaccount.wav */,
+				074DBDD02018BA2200CFFC89 /* bodak.wav */,
+				074DBDCB2018BA2200CFFC89 /* cheapthrill.wav */,
+				074DBDC12018BA2100CFFC89 /* closer.wav */,
+				074DBDC72018BA2100CFFC89 /* despacito.wav */,
+				074DBDC32018BA2100CFFC89 /* eyou.wav */,
+				074DBDC92018BA2100CFFC89 /* feels.wav */,
+				074DBDC82018BA2100CFFC89 /* ispy.wav */,
+				074DBDC02018BA2100CFFC89 /* letmeloveyou.wav */,
+				074DBDD12018BA2200CFFC89 /* migentre.wav */,
+				074DBDC42018BA2100CFFC89 /* mip.wav */,
+				074DBDCA2018BA2100CFFC89 /* panda.wav */,
+				074DBDC22018BA2100CFFC89 /* reaggae.wav */,
+				074DBDCC2018BA2200CFFC89 /* rockstar.wav */,
+				074DBDCD2018BA2200CFFC89 /* shapeofyou.wav */,
+				074DBDCF2018BA2200CFFC89 /* starboy.wav */,
+				074DBDC62018BA2100CFFC89 /* unforgettable.wav */,
+				074DBDD22018BA2200CFFC89 /* wedont.wav */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
+		074DBE0F2018BA4000CFFC89 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE112018BA4C00CFFC89 /* SongCell.swift */,
+				074DBE102018BA4C00CFFC89 /* SongCellHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		074DBE142018BA5300CFFC89 /* JLActivity */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE1B2018BA8500CFFC89 /* JLYoutubeActivity.bundle */,
+				074DBE1D2018BA8500CFFC89 /* JLYoutubeActivity.h */,
+				074DBE192018BA8400CFFC89 /* JLYoutubeActivity.m */,
+				074DBE152018BA8300CFFC89 /* Ringtones-Bridging-Header.h */,
+			);
+			path = JLActivity;
+			sourceTree = "<group>";
+		};
+		074DBE342018BAC500CFFC89 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE392018BAD200CFFC89 /* AlertMessage.swift */,
+				074DBE372018BAD200CFFC89 /* AssetManager.swift */,
+				074DBE362018BAD200CFFC89 /* StyleGuideManager.swift */,
+				074DBE3A2018BAD200CFFC89 /* Constants.swift */,
+				074DBE352018BAD200CFFC89 /* Extenstions.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		074DBE412018BAFA00CFFC89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE452018BB0500CFFC89 /* HomeController.swift */,
+				074DBE432018BB0500CFFC89 /* InfoController.swift */,
+				074DBE422018BB0500CFFC89 /* SongPlayController.swift */,
+				074DBE442018BB0500CFFC89 /* TutorialController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		074DBE4A2018BB0800CFFC89 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				074DBE4B2018BB1200CFFC89 /* LoginController.swift */,
+				074DBE4C2018BB1200CFFC89 /* SignupController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1DEBC106AF664FF41CF91993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9ED85F0A667E38040E3F0E5 /* Pods-Ringtones.debug.xcconfig */,
+				8E7E26F009009FA60DCE2424 /* Pods-Ringtones.release.xcconfig */,
+				E1626E34C5CD75CC3E4A9FA3 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				4EEA1E5AD638086E49464842 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEEFD6BECB8B9EAB244065B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21383A8E61F48C283C6882F /* Pods_Ringtones.framework */,
+				64CF623FF81761C145DEA681 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074DBD8B2018B63600CFFC89 /* Ringtones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074DBD9E2018B63600CFFC89 /* Build configuration list for PBXNativeTarget "Ringtones" */;
+			buildPhases = (
+				847472FDE0259FA2F406978E /* [CP] Check Pods Manifest.lock */,
+				074DBD882018B63600CFFC89 /* Sources */,
+				074DBD892018B63600CFFC89 /* Frameworks */,
+				074DBD8A2018B63600CFFC89 /* Resources */,
+				E533B0D23B7008D46CAD1076 /* [CP] Embed Pods Frameworks */,
+				CA0315C280EE748695236880 /* [CP] Copy Pods Resources */,
+				074DBDB02018B8B000CFFC89 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074DBDAB2018B8B000CFFC89 /* PBXTargetDependency */,
+			);
+			name = Ringtones;
+			productName = Ringtones;
+			productReference = 074DBD8C2018B63600CFFC89 /* Ringtones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074DBDA42018B8B000CFFC89 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074DBDAF2018B8B000CFFC89 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				2E70546BF6254C910FDCE0B4 /* [CP] Check Pods Manifest.lock */,
+				074DBDA12018B8B000CFFC89 /* Sources */,
+				074DBDA22018B8B000CFFC89 /* Frameworks */,
+				074DBDA32018B8B000CFFC89 /* Resources */,
+				9921234AF8BE343BF5119404 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 074DBDA52018B8B000CFFC89 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074DBD842018B63600CFFC89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = PAC;
+				TargetAttributes = {
+					074DBD8B2018B63600CFFC89 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					074DBDA42018B8B000CFFC89 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 074DBD872018B63600CFFC89 /* Build configuration list for PBXProject "Ringtones" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074DBD832018B63600CFFC89;
+			productRefGroup = 074DBD8D2018B63600CFFC89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074DBD8B2018B63600CFFC89 /* Ringtones */,
+				074DBDA42018B8B000CFFC89 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074DBD8A2018B63600CFFC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074DBDD82018BA2200CFFC89 /* mip.wav in Resources */,
+				074DBE062018BA3500CFFC89 /* feelsapp.mp3 in Resources */,
+				074DBDD62018BA2200CFFC89 /* reaggae.wav in Resources */,
+				074DBE0A2018BA3500CFFC89 /* wedonttalkanymoretagged.mp3 in Resources */,
+				074DBDD92018BA2200CFFC89 /* bankaccount.wav in Resources */,
+				074DBDFF2018BA3500CFFC89 /* reaggaetagged.mp3 in Resources */,
+				074DBDFE2018BA3500CFFC89 /* bodakapp.mp3 in Resources */,
+				074DBDE02018BA2200CFFC89 /* rockstar.wav in Resources */,
+				074DBE0D2018BA3500CFFC89 /* eyou.mp3 in Resources */,
+				074DBE002018BA3500CFFC89 /* cheapthrillstagged.mp3 in Resources */,
+				074DBE082018BA3500CFFC89 /* migentreapp.mp3 in Resources */,
+				074DBE012018BA3500CFFC89 /* pandatagged.mp3 in Resources */,
+				074DBE032018BA3500CFFC89 /* alonetagged.mp3 in Resources */,
+				074DBD9A2018B63600CFFC89 /* LaunchScreen.storyboard in Resources */,
+				074DBD972018B63600CFFC89 /* Assets.xcassets in Resources */,
+				074DBE292018BA8600CFFC89 /* JLYoutubeActivity.bundle in Resources */,
+				074DBE092018BA3500CFFC89 /* starboytagged.mp3 in Resources */,
+				074DBDE62018BA2200CFFC89 /* wedont.wav in Resources */,
+				074DBE022018BA3500CFFC89 /* rockstartagged.mp3 in Resources */,
+				074DBD952018B63600CFFC89 /* Main.storyboard in Resources */,
+				074DBDDD2018BA2200CFFC89 /* feels.wav in Resources */,
+				074DBDDC2018BA2200CFFC89 /* ispy.wav in Resources */,
+				074DBDD42018BA2200CFFC89 /* letmeloveyou.wav in Resources */,
+				074DBE042018BA3500CFFC89 /* unforgettableapp.mp3 in Resources */,
+				074DBDD52018BA2200CFFC89 /* closer.wav in Resources */,
+				074DBDD72018BA2200CFFC89 /* eyou.wav in Resources */,
+				074DBDDF2018BA2200CFFC89 /* cheapthrill.wav in Resources */,
+				074DBDDE2018BA2200CFFC89 /* panda.wav in Resources */,
+				074DBDFC2018BA3500CFFC89 /* shapeofyoutagged.mp3 in Resources */,
+				074DBE0C2018BA3500CFFC89 /* closertagged.mp3 in Resources */,
+				074DBDE22018BA2200CFFC89 /* alone.wav in Resources */,
+				074DBDFD2018BA3500CFFC89 /* ispytaggged.mp3 in Resources */,
+				074DBE052018BA3500CFFC89 /* attentionapp.mp3 in Resources */,
+				074DBDDB2018BA2200CFFC89 /* despacito.wav in Resources */,
+				074DBDFB2018BA3500CFFC89 /* despacitotagged.mp3 in Resources */,
+				074DBDE12018BA2200CFFC89 /* shapeofyou.wav in Resources */,
+				074DBE072018BA3500CFFC89 /* letmeloveyoutagged.mp3 in Resources */,
+				074DBDE42018BA2200CFFC89 /* bodak.wav in Resources */,
+				074DBDDA2018BA2200CFFC89 /* unforgettable.wav in Resources */,
+				074DBE0E2018BA3500CFFC89 /* marimbasinparistagged.mp3 in Resources */,
+				074DBDD32018BA2200CFFC89 /* attention.wav in Resources */,
+				074DBDE32018BA2200CFFC89 /* starboy.wav in Resources */,
+				074DBE0B2018BA3500CFFC89 /* bankapp.mp3 in Resources */,
+				074DBDE52018BA2200CFFC89 /* migentre.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074DBDA32018B8B000CFFC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E70546BF6254C910FDCE0B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847472FDE0259FA2F406978E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ringtones-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9921234AF8BE343BF5119404 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA0315C280EE748695236880 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ringtones/Pods-Ringtones-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E533B0D23B7008D46CAD1076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ringtones/Pods-Ringtones-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/NDParallaxIntroView/NDParallaxIntroView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NDParallaxIntroView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ringtones/Pods-Ringtones-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074DBD882018B63600CFFC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074DBE462018BB0500CFFC89 /* SongPlayController.swift in Sources */,
+				074DBDBB2018B9F800CFFC89 /* SongItem.swift in Sources */,
+				074DBE3F2018BAD300CFFC89 /* AlertMessage.swift in Sources */,
+				074DBE482018BB0500CFFC89 /* TutorialController.swift in Sources */,
+				074DBE492018BB0500CFFC89 /* HomeController.swift in Sources */,
+				074DBD922018B63600CFFC89 /* ViewController.swift in Sources */,
+				074DBDB92018B9EC00CFFC89 /* MusicConstants.swift in Sources */,
+				074DBE132018BA4C00CFFC89 /* SongCell.swift in Sources */,
+				074DBE3C2018BAD300CFFC89 /* StyleGuideManager.swift in Sources */,
+				074DBD902018B63600CFFC89 /* AppDelegate.swift in Sources */,
+				074DBE402018BAD300CFFC89 /* Constants.swift in Sources */,
+				074DBE322018BABF00CFFC89 /* ToplessTextfield.swift in Sources */,
+				074DBE3D2018BAD300CFFC89 /* AssetManager.swift in Sources */,
+				074DBE4D2018BB1200CFFC89 /* LoginController.swift in Sources */,
+				074DBE472018BB0500CFFC89 /* InfoController.swift in Sources */,
+				074DBE4E2018BB1200CFFC89 /* SignupController.swift in Sources */,
+				074DBE3E2018BAD300CFFC89 /* Methods.swift in Sources */,
+				074DBE3B2018BAD300CFFC89 /* Extenstions.swift in Sources */,
+				074DBDB82018B9EC00CFFC89 /* MusicMethods.swift in Sources */,
+				074DBE332018BABF00CFFC89 /* AudioPlayer.swift in Sources */,
+				074DBE272018BA8600CFFC89 /* JLYoutubeActivity.m in Sources */,
+				074DBE122018BA4C00CFFC89 /* SongCellHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074DBDA12018B8B000CFFC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074DBDA82018B8B000CFFC89 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074DBDAB2018B8B000CFFC89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074DBDA42018B8B000CFFC89 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 074DBDAA2018B8B000CFFC89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		074DBD932018B63600CFFC89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074DBD942018B63600CFFC89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		074DBD982018B63600CFFC89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074DBD992018B63600CFFC89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074DBD9C2018B63600CFFC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074DBD9D2018B63600CFFC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074DBD9F2018B63600CFFC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9ED85F0A667E38040E3F0E5 /* Pods-Ringtones.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHA5JS655T;
+				INFOPLIST_FILE = Ringtones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caesar.Ringtones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ringtones/Views/JLActivity/Ringtones-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		074DBDA02018B63600CFFC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7E26F009009FA60DCE2424 /* Pods-Ringtones.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHA5JS655T;
+				INFOPLIST_FILE = Ringtones/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caesar.Ringtones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ringtones/Views/JLActivity/Ringtones-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		074DBDAD2018B8B000CFFC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1626E34C5CD75CC3E4A9FA3 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHA5JS655T;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caesar.Ringtones.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		074DBDAE2018B8B000CFFC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEA1E5AD638086E49464842 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AHA5JS655T;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caesar.Ringtones.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074DBD872018B63600CFFC89 /* Build configuration list for PBXProject "Ringtones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074DBD9C2018B63600CFFC89 /* Debug */,
+				074DBD9D2018B63600CFFC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074DBD9E2018B63600CFFC89 /* Build configuration list for PBXNativeTarget "Ringtones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074DBD9F2018B63600CFFC89 /* Debug */,
+				074DBDA02018B63600CFFC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074DBDAF2018B8B000CFFC89 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074DBDAD2018B8B000CFFC89 /* Debug */,
+				074DBDAE2018B8B000CFFC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 074DBD842018B63600CFFC89 /* Project object */;
+}
